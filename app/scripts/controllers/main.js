@@ -10,7 +10,6 @@ employeesAppControllers.controller('MainCtrl',['$scope', 'employeeService', func
 		employeeService.getEmployee('employee').then(
             function (result) { // success
               $scope.employee = result;
-              $scope.res1 = result;
               $scope.isEmplVis = true;
               console.log(result);
             }, function (error) { console.log(error.statusText); } //error
@@ -21,7 +20,6 @@ employeesAppControllers.controller('MainCtrl',['$scope', 'employeeService', func
 		employeeService.getSalary('salary').then(
             function (result) { // success
               parseXml(result);
-              $scope.res2 = result;
               console.log(result);
               $scope.isSalaryVis = true;
             }, function (error) { console.log(error.statusText); } //error
