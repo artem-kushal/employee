@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Salary>
+	<id>123</id>
+	<amount>2000</amount>
+	<currency>usd</currency>
+	<month>9</month>
+</Salary>

@@ -1,0 +1,24 @@
+<div class="row main">
+  <div class="col-md-12">
+    <button type="button" class="btn btn-default" ng-click="getEmployee()">GetEmployee</button>
+    <button type="button" class="btn btn-default" ng-click="getSalary()">GetSalary</button>
+    <button type="button" class="btn btn-default" ng-click="getEmployeeAndSalary()">GetEmployeeAndSalary</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4" ng-show="isEmplVis">
+    <h4>Employee</h4>
+
+    <p>id: {{employee.id}}</p>
+    <p>firstname: {{employee.firstname}}</p>
+    <p>lastname: {{employee.lastname}}</p>
+  </div>
+  <div class="col-md-2" ng-show="isSalaryVis">
+    <h4>Salary: </h4>
+    <p>employeeId: {{salary.employeeId}}</p>
+    <p>amount: {{salary.amount}}</p>
+    <p>currency: {{salary.currency}}</p>
+    <p>month: {{salary.month}}</p>
+  </div>
+</div>
+
